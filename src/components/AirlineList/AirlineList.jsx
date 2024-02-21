@@ -8,8 +8,12 @@ function AirlineList (){
     return(
         <>
         <table>
-            <th>Airlines</th>
+            <tbody>
+                <tr>
+                <th>Airlines</th>
+                </tr>
                 {airlineList.map((airline, index) => (<tr key= {index}>{airline}</tr>))}
+            </tbody>
         </table>
 
         </>
